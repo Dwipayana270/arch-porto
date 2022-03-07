@@ -5,11 +5,14 @@ import Navbar from "../components/Navbar";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  
   return (
     <div>
+      <SimpleReactLightbox>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -51,6 +54,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div>{children}</div>
       <Footer />
+      </SimpleReactLightbox>
     </div>
   );
 };
