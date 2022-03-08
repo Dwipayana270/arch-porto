@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import SimpleReactLightbox from 'simple-react-lightbox'

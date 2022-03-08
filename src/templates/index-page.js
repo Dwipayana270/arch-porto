@@ -24,13 +24,18 @@ export const IndexPageTemplate = ({
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
+
+
+                
                 <div className="content">
                   <div className="column is-12">
-                    <h1 className="title">{title}</h1>
-                    <h2 className="heading">{heading}</h2>
-                    <h3 className="description">{description}</h3>
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
+                    <div style={{marginBottom: "120px", marginTop: "30px"}}>
+                      <h1 className="title">{title}</h1>
+                      <h2 className="subtitle is-6">{heading}</h2>
+                      <p className="description">{description}</p>
+                    </div>
+                    <h3 className="has-text-weight-semibold is-size-6">
+                      Latest Project
                     </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
