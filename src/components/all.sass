@@ -102,15 +102,31 @@ $menu-label-color: $white-ter
   text-align: left
 .social
   padding: 2em
+
+  
+  
 .social a
     padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
+    border-radius: 0.5em
+    background-color: transparent
     margin: .5em
     width: 1em
     height: 1em
     vertical-align: middle
     display: inline
+
+    &:hover
+      background-color: $kaldi-red-invert
+      
+      img
+        filter: invert(5%) sepia(16%) saturate(14%) hue-rotate(314deg) brightness(91%) contrast(87%)
+    
+    
+      
+
+.social img 
+    filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(311deg) brightness(113%) contrast(91%)
+      
 
 // blog roll
 .blog-list-item.is-featured
