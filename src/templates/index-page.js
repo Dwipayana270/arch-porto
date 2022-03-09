@@ -24,9 +24,6 @@ export const IndexPageTemplate = ({
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-
-
-                
                 <div className="content">
                   <div className="column is-12">
                     <div style={{marginBottom: "120px", marginTop: "30px"}}>
