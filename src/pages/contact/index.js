@@ -36,6 +36,13 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="content">
+                  <div className="column is-12">
         <section className="section">
           <div className="container">
             <div className="content">
@@ -109,6 +116,13 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
+        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </Layout>
     );
   }
