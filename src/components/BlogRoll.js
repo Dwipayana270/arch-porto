@@ -9,16 +9,11 @@ class BlogRollTemplate extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline pt-3">
+      <div className="columns is-multiline pt-3 is-centered">
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
+                <header className='is-centered has-text-centered'>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
@@ -44,7 +39,12 @@ class BlogRollTemplate extends React.Component {
                     </Link>
                   </p>
                 </header>
-              </article>
+              {/* <article
+                className={`blog-list-item tile is-child box notification ${
+                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                }`}
+              >
+              </article> */}
             </div>
           ))}
       </div>
@@ -83,7 +83,7 @@ export default function BlogRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
+                        width: 300
                         quality: 100
                         layout: CONSTRAINED
                       )
