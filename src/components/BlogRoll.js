@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import {captionStyle4} from './Image.module.css'
 
 class BlogRollTemplate extends React.Component {
   render() {
@@ -16,20 +17,26 @@ class BlogRollTemplate extends React.Component {
                 <header className='is-centered has-text-centered'>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
-                      <Link to={post.fields.slug}>
-                        <PreviewCompatibleImage
-                          imageInfo={{
-                            image: post.frontmatter.featuredimage,
-                            alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                            width:
-                              post.frontmatter.featuredimage.childImageSharp
-                                .gatsbyImageData.width,
-                            height:
-                              post.frontmatter.featuredimage.childImageSharp
-                                .gatsbyImageData.height,
-                          }}
-                        />
-                      </Link>
+                      <div className={captionStyle4}>
+                        <li>
+                          <Link to={post.fields.slug}>
+                            <PreviewCompatibleImage
+                              imageInfo={{
+                                image: post.frontmatter.featuredimage,
+                                alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                                width:
+                                  post.frontmatter.featuredimage.childImageSharp
+                                    .gatsbyImageData.width,
+                                height:
+                                  post.frontmatter.featuredimage.childImageSharp
+                                    .gatsbyImageData.height,
+                              }}
+                            />
+                          </Link>
+                          <p>{post.frontmatter.title}</p>
+                        </li>
+                      </div>
+                    
                     </div>
                   ) : null}
                   {/* <p className="post-meta">

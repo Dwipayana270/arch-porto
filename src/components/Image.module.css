@@ -1,3 +1,84 @@
+.caption-style-4 p {
+    color: blue;
+    font-size: 2em;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+}
+
+.caption-style-4:hover p {
+    visibility: visible;
+    color: #fff;
+}
+
+.caption-style-2 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caption-style-2 li {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-style-2 li:hover .caption {
+    opacity: 1;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+
+.caption-style-2 img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+.caption-style-2 .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 300px;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.caption-style-2 .blur {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 300px;
+    width: 400px;
+    z-index: 5;
+    position: absolute;
+}
+
+.caption-style-2 .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.caption-style-2 .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top: 20px;
+}
+
 .caption-style-4 {
     list-style-type: none;
     margin: 0px;
@@ -5,7 +86,7 @@
 }
 
 .caption-style-4 li {
-    float: left;
+    /* float: left; */
     padding: 0px;
     position: relative;
     overflow: hidden;
@@ -16,19 +97,20 @@
 }
 
 .caption-style-4 li:hover img {
-    opacity: 1;
-    transform: scale(1.15, 1.15);
-    -webkit-transform: scale(1.15, 1.15);
-    -moz-transform: scale(1.15, 1.15);
-    -ms-transform: scale(1.15, 1.15);
-    -o-transform: scale(1.15, 1.15);
+    opacity: 1 !important;
+    filter: grayscale(90%) brightness(30%);
+    transform: scale(1.15, 1.15) !important;
+    -webkit-transform: scale(1.15, 1.15) !important;
+    -moz-transform: scale(1.15, 1.15) !important;
+    -ms-transform: scale(1.15, 1.15) !important;
+    -o-transform: scale(1.15, 1.15) !important;
 }
 
 .caption-style-4 img {
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    z-index: 0;
+    margin: 0px !important;
+    padding: 0px !important;
+    float: left !important;
+    z-index: 0 !important;
 }
 
 .caption-style-4 .caption {
@@ -43,17 +125,16 @@
 }
 
 .caption-style-4 img {
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out !important;
+    -moz-transition: all 0.25s ease-in-out !important;
+    -o-transition: all 0.25s ease-in-out !important;
+    -ms-transition: all 0.25s ease-in-out !important;
+    transition: all 0.25s ease-in-out !important;
 }
 
 .caption-style-4 .blur {
     background-color: rgba(0, 0, 0, 0.65);
-    height: 500px;
-    width: 500px;
+    width: 300px;
     z-index: 5;
     position: absolute;
 }
@@ -67,8 +148,7 @@
     z-index: 10;
     color: #fff;
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 300px;
     text-align: center;
     top: 200px;
 }
