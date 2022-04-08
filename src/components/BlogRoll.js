@@ -10,11 +10,11 @@ class BlogRollTemplate extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className='columns is-multiline is-centered px-0 mx-0 pt-3'>
+      <div className='columns is-multiline is-mobile px-0 mx-0' style={{marginTop: '20px', marginBottom: '50px'}}>
         {posts &&
           posts.map(({ node: post }) => (
             // <div >
-              <div className='column is-half-tablet is-thirds-widescreen' key={post.id} style={{padding: 0}}>
+              <div className='column is-half-tablet' key={post.id} style={{padding: 0}}>
                 {post.frontmatter.featuredimage ? (
                   <div className={captionStyle4}> 
                     <li>
