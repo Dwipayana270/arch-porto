@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import logo from "../img/logo.svg";
+import './Navbar.css';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -62,6 +63,32 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-end has-text-centered">
+              <div className="navbar-item has-dropdown is-hoverable is-desktop" >
+                
+                <input type="checkbox" id="dropdown1"/>
+                <label for="dropdown1" className="navbar-link">example </label>
+                {/* <Link className="navbar-link">Test</Link> */}
+                <div className="navbar-dropdown is-boxed" id="dropdown-content1">
+                  <Link className="navbar-item" to="/about">
+                    About
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    About
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    About
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    About
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    About
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    About
+                  </Link>
+                </div>
+              </div>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
