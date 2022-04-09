@@ -1,4 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap')
+
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -9,6 +11,9 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #3f3f3f
 $black: #1a1a1a
+
+$family-sans-serif: 'Karla', sans-serif
+
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -61,12 +66,15 @@ $black: #1a1a1a
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    color: $black
+    text-align: $black
+    -webkit-box-shadow: inset 0 0 0 2px $black
+    box-shadow: inset 0 0 0 2px $black
     -webkit-transition: all .15s ease
     transition: all .15s ease
+
+.btn:hover
+  box-shadow: inset 0 0 0 6px $black
 
 .margin-top-0
   margin-top: 0 !important
