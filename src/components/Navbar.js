@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo.svg";
+import smalllogo from "../img/smalllogo.png";
 import './Navbar.css';
 
 const Navbar = class extends React.Component {
@@ -42,7 +42,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+              <img src={smalllogo} alt="awaarchitect" className="is-hidden-mobile"/>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -63,43 +63,30 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-end has-text-centered">
-              <div className="navbar-item has-dropdown is-hoverable is-desktop" >
+              <div className="navbar-item has-dropdown is-hoverable" >
                 
                 <input type="checkbox" id="dropdown1"/>
-                <label for="dropdown1" className="navbar-link">example </label>
-                {/* <Link className="navbar-link">Test</Link> */}
+                <label for="dropdown1" className="navbar-link">Category</label>
                 <div className="navbar-dropdown is-boxed" id="dropdown-content1">
-                  <Link className="navbar-item" to="/about">
-                    About
+                  <Link className="navbar-item" to="/selected">
+                    Selected Works
                   </Link>
-                  <Link className="navbar-item" to="/about">
-                    About
+                  <Link className="navbar-item" to="/residential">
+                    Residential
                   </Link>
-                  <Link className="navbar-item" to="/about">
-                    About
+                  <Link className="navbar-item" to="/hospitality">
+                    Hospitality
                   </Link>
-                  <Link className="navbar-item" to="/about">
-                    About
-                  </Link>
-                  <Link className="navbar-item" to="/about">
-                    About
-                  </Link>
-                  <Link className="navbar-item" to="/about">
-                    About
+                  <Link className="navbar-item" to="/urban">
+                    Urban
                   </Link>
                 </div>
               </div>
+              <Link className="navbar-item" to="/blog">
+                All Works
+              </Link>
               <Link className="navbar-item" to="/about">
                 About
-              </Link>
-              <Link className="navbar-item" to="/architecture">
-                Architecture Projects
-              </Link>
-              <Link className="navbar-item" to="/interior">
-                Interior Design
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                All Projects
               </Link>
               <Link className="navbar-item" to="/contact">
                 Contact

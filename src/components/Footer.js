@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import logo from "../img/logo.svg";
+import biglogo from "../img/biglogo.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
@@ -13,9 +13,9 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter" style={{padding: '0px'}}>
         <div className="has-text-centered">
           <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: "9em", height: "5em" }}
+            src={biglogo}
+            alt="awaarchitect"
+            style={{ width: "9em", padding: "10px", paddingTop: "25px", filter: "brightness(0) invert(1)" }}
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
@@ -31,12 +31,22 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/architecture">
-                        Architecture Projects
+                        Selected Works
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/interior">
-                        Interior Design Projects
+                        Residential
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/interior">
+                        Hospitality
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/interior">
+                        Urban
                       </Link>
                     </li>
                   </ul>
@@ -47,7 +57,7 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item" to="/blog">
-                        All Projects
+                        All Works
                       </Link>
                     </li>
                     <li>
