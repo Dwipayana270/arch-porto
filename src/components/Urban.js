@@ -74,10 +74,10 @@ export default function BlogRoll() {
   return (
     <StaticQuery
       query={graphql`
-      query SelectedQuery {
+      query UrbanQuery {
         allMarkdownRemark(
           sort: {order: DESC, fields: [frontmatter___date]}
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "Selected"}}}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "Urban"}}}
         ) {
           edges {
             node {

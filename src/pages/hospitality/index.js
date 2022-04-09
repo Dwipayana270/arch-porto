@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Layout from "../../components/Layout";
-import Urban from "../../components/Urban";
+import Hospitality from "../../components/Hospitality";
 
 export default class DesignBlogIndexPage extends React.Component {
   render() {
@@ -17,9 +17,9 @@ export default class DesignBlogIndexPage extends React.Component {
                   <div className="content">
                     <div className="column is-12">
                       <h3 className="title">
-                        Urban
+                        Hospitality
                       </h3>
-                      <Urban />
+                      <Hospitality />
                     </div>
                   </div>
                 </div>
