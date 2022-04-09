@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import smalllogo from "../img/smalllogo.png";
+import biglogoside from "../img/biglogoside.png";
 import './Navbar.css';
 
 const Navbar = class extends React.Component {
@@ -42,7 +43,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={smalllogo} alt="awaarchitect" className="is-hidden-mobile"/>
+              <img src={biglogoside} alt="awaarchitect" className="is-hidden-touch"/>
+              <img src={smalllogo} alt="awaarchitect" className="is-hidden-desktop"/>
             </Link>
             {/* Hamburger menu */}
             <div
