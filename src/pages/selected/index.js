@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import Layout from "../../components/Layout";
-import BlogRoll from "../../components/BlogRoll";
+import Selected from "../../components/Selected";
 
-export default class BlogIndexPage extends React.Component {
+export default class DesignBlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -17,9 +17,9 @@ export default class BlogIndexPage extends React.Component {
                   <div className="content">
                     <div className="column is-12">
                       <h3 className="title">
-                        All Projects
+                        Selected Works
                       </h3>
-                      <BlogRoll />
+                      <Selected />
                     </div>
                   </div>
                 </div>

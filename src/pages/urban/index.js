@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import Layout from "../../components/Layout";
-import DesignBlogRoll from "../../components/DesignBlogRoll";
+import ArchBlogRoll from "../../components/ArchBlogRoll";
 
-export default class DesignBlogIndexPage extends React.Component {
+export default class ArchBlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -17,9 +17,9 @@ export default class DesignBlogIndexPage extends React.Component {
                   <div className="content">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-6">
-                        Interior Design Projects
+                        Architecture Projects
                       </h3>
-                      <DesignBlogRoll />
+                      <ArchBlogRoll />
                     </div>
                   </div>
                 </div>
