@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Teras Apartements 2
+title: Berawa Resident
 date: 2022-04-08T11:09:13.270Z
 description: The program was to fit 5 apartments in 1st floor and 5 shops on
   ground floor with a 20m x 4.5m size. Because of the deepness on the apartments
@@ -9,9 +9,9 @@ description: The program was to fit 5 apartments in 1st floor and 5 shops on
   bathrooms. By opening the two patios the cross ventilation will be heading all
   along the apartment.
 featuredpost: false
-featuredimage: /img/cover.jpg
+featuredimage: /img/va_exterior_3_.jpg
 tags:
-  - interior design
+  - Urban
 ---
 **Location:**
 
