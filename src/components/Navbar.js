@@ -68,7 +68,7 @@ const Navbar = class extends React.Component {
               <div className="navbar-item has-dropdown is-hoverable" >
                 
                 <input type="checkbox" id="dropdown1"/>
-                <label for="dropdown1" className="navbar-link">Category</label>
+                <label for="dropdown1" className="navbar-link is-arrowless">Category</label>
                 <div className="navbar-dropdown is-boxed" id="dropdown-content1">
                   <Link className="navbar-item" to="/selected">
                     Selected Works
