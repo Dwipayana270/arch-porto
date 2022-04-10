@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "AWA Architect",
+        title: "awaarchitect",
         description: "",
     },
     plugins: [
