@@ -77,7 +77,7 @@ export default function BlogRoll() {
       query UrbanQuery {
         allMarkdownRemark(
           sort: {order: DESC, fields: [frontmatter___date]}
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "Urban"}}}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "urban"}}}
         ) {
           edges {
             node {

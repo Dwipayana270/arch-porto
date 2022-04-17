@@ -77,7 +77,7 @@ export default function BlogRoll() {
       query HospitalityQuery {
         allMarkdownRemark(
           sort: {order: DESC, fields: [frontmatter___date]}
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "Hospitality"}}}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "hospitality"}}}
         ) {
           edges {
             node {

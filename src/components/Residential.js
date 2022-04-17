@@ -77,7 +77,7 @@ export default function BlogRoll() {
       query ResidentialQuery {
         allMarkdownRemark(
           sort: {order: DESC, fields: [frontmatter___date]}
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "Residential"}}}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "residential"}}}
         ) {
           edges {
             node {

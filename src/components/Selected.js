@@ -77,7 +77,7 @@ export default function BlogRoll() {
       query SelectedQuery {
         allMarkdownRemark(
           sort: {order: DESC, fields: [frontmatter___date]}
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "Selected"}}}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {eq: "selected"}}}
         ) {
           edges {
             node {
