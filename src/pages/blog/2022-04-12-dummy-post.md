@@ -6,6 +6,6 @@ description: test
 featuredpost: false
 featuredimage: /img/villa-awasi-lower-floor.jpg
 tags:
-  - urban
+  - residential
 ---
 dummy desc
