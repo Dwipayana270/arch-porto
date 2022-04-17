@@ -11,7 +11,7 @@ description: The program was to fit 5 apartments in 1st floor and 5 shops on
 featuredpost: false
 featuredimage: /img/va_exterior_3_.jpg
 tags:
-  - hospitality
+  - residential
 ---
 **Location:**
 
