@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
-import {captionStyle4, wrapper} from './Image.module.css'
+import {captionStyle4} from './Image.module.css'
 
 class BlogRollTemplate extends React.Component {
   render() {
