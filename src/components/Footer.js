@@ -71,14 +71,14 @@ const Footer = class extends React.Component {
               <div className="column is-4 social">
                 <section style={{marginTop: "20px", marginBottom: "20px"}}>
                   <p style={{color: "rgb(197 197 197)"}}>Reach Us:</p>
-                  <a title="instagram" href="https://instagram.com">
+                  <a title="instagram" href="https://www.instagram.com/awaarchitect/">
                     <img
                       src={instagram}
                       alt="Instagram"
                       style={{ width: "1em", height: "1em" }}
                     />
                   </a>
-                  <a title="whatsapp" href="https://whatsapp.com">
+                  <a title="whatsapp" href="https://wa.me/6285792691277">
                     <img
                       src={whatsapp}
                       alt="whatsapp"
