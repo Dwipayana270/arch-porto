@@ -27,7 +27,8 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="column is-12">
                     <div style={{marginBottom: "120px", marginTop: "30px"}}>
-                      <h1 className="title is-size-1" style={{marginLeft: "-3px"}}>{title}</h1>
+                      <p style={{whiteSpace:"nowrap"}}><span className="title is-size-1" style={{marginLeft: "-3px"}}>awa</span><span className="is-size-1" style={{fontWeight: "300"}}>architect</span></p>
+                      <h1 className="title is-size-1" style={{marginLeft: "-3px"}}></h1>
                       <h2 className="subtitle is-6">{heading}</h2>
                       <p className="description">{description}</p>
                     </div>
