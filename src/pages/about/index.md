@@ -3,5 +3,10 @@ templateKey: about-page
 path: /about
 title: AWA Architect
 ---
+**Adi Witika**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis risus id nisl tempor sagittis. In hac habitasse platea dictumst. Nulla ac libero libero. Aliquam erat volutpat. Proin consequat porta turpis, at tincidunt est facilisis quis. Aenean ut iaculis libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris non dolor porta, consequat lorem a, molestie nunc. Cras nunc risus, mattis sed ex quis, elementum lacinia ante. Pellentesque ac fermentum tellus. Proin in dolor volutpat nisi cursus posuere. Nullam suscipit risus vitae ornare tincidunt.
+Principal | Owner
+
+![](/img/img_3206.jpg)
+
+born in the village of Gelagah a small village in the city of Tabanan, Bali. earned his architect degree from the University of Warmadewa which is one of the prestigious private universities in the province of Bali, born from a simple family who has the determination to run a small studio internationally and collaborate with other design parties
