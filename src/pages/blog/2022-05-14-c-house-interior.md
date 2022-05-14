@@ -18,14 +18,14 @@ C-House Interior
 
 this is an interior design in collaboration with Resonance.Work
 
-LOCATION
+LOCATION\
+**Bali** \
+**<br/>**
 
-**Bali**
+DESIGN\
+**ADI WITIKA** 
 
-DESIGN
+**<br/>**
 
-**ADI WITIKA**
-
-DESIGN AREA
-
+DESIGN AREA\
 **26 Sqm**
