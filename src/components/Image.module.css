@@ -5,14 +5,18 @@
 
 .caption-style-4 p {
     color: blue;
-    font-size: 1.3em;
+    background-color: rgb(31, 31, 31);
+    font-size: 0.9rem;
     visibility: hidden;
     position: absolute;
-    top: 50%;
+    bottom: 0;
+    width: 100%;
+    padding: 0.3rem;
+    /* top: 50%; */
     /* position the top  edge of the element at the middle of the parent */
-    left: 50%;
+    /* left: 50%; */
     /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 .caption-style-4 li:hover p {
@@ -103,15 +107,12 @@
 
 .caption-style-4 li:hover img {
     opacity: 1 !important;
-    filter: grayscale(90%) brightness(30%);
-    transform: scale(1.15, 1.15) !important;
-    -webkit-transform: scale(1.15, 1.15) !important;
-    -moz-transform: scale(1.15, 1.15) !important;
-    -ms-transform: scale(1.15, 1.15) !important;
-    -o-transform: scale(1.15, 1.15) !important;
+    filter: grayscale(0) brightness(1);
 }
 
 .caption-style-4 img {
+    opacity: 1 !important;
+    filter: grayscale(100%) brightness(70%);
     margin: 0px !important;
     padding: 0px !important;
     float: left !important;

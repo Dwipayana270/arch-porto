@@ -6,7 +6,9 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 // import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-// import FullWidthImage from "../components/FullWidthImage";
+import FullWidthImage from "../components/FullWidthImage";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -18,36 +20,55 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="column is-12">
-                    <div style={{marginBottom: "120px", marginTop: "30px"}}>
+      <div style={{height: '100vh'}}>
+      <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
                       <p style={{whiteSpace:"nowrap"}}><span className="title is-size-1" style={{marginLeft: "-3px"}}>awa</span><span className="is-size-1" style={{fontWeight: "300"}}>architect</span></p>
                       <h1 className="title is-size-1" style={{marginLeft: "-3px"}}></h1>
                       <h2 className="subtitle is-6">{heading}</h2>
                       <p className="description">{description}</p>
                     </div>
-                    <h3 className="title">
+       <Carousel showThumbs={false} showStatus={false} animationHandler={"fade"} swipeable={false} transitionTime={1000} autoPlay={true} interval={3000} infiniteLoop={true}>
+                <div style={{height: '92vh'}}>
+                    <img style={{
+                          height: '100%',
+                          width: '100%',
+                          objectFit: 'cover'
+                    }} src="https://picsum.photos/seed/picsum/600/200" />
+                </div>
+                <div style={{height: '92vh'}}>
+                    <img style={{
+                          height: '100%',
+                          width: '100%',
+                          objectFit: 'cover'
+                    }} src="https://picsum.photos/seed/picsum/600/200" />
+                </div>
+            </Carousel>
+
+      </div>
+      {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
+      {/* <section className="section section--gradient"> */}
+        <div style={{display: 'block', margin: '0 auto 10rem', width: 'clamp(300px, 100%, 1000px)', padding: '0 1rem'}}>
+          {/* <div className="section"> */}
+            {/* <div className="columns"> */}
+              {/* <div className="column is-12 is-offset-1"> */}
+                {/* <div className="content"> */}
+                  {/* <div className="column is-12"> */}
+                    <p style={{paddingLeft: '0.5rem'}}>
                       Latest Projects
-                    </h3>
+                    </p>
                     <BlogRoll />
-                    <div className="column is-12 has-text-centered">
+                    {/* <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/blog">
                         More
                       </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    </div> */}
+                  {/* </div> */}
+                {/* </div> */}
+              {/* </div> */}
+            {/* </div> */}
+          {/* </div> */}
         </div>
-      </section>
+      {/* </section> */}
     </div>
   );
 };
