@@ -16,7 +16,7 @@ tags:
 
 C-House Interior 
 
-this is an interior design in collaboration with
+this is an interior design in collaboration with Resonance.Work
 
 LOCATION
 
