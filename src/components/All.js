@@ -14,7 +14,7 @@ class BlogRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             // <div >
-              <div className='column is-one-quarter-tablet' key={post.id} style={{padding: '0.5rem'}}>
+              <div className='column is-half-tablet is-thirds-widescreen' key={post.id} style={{padding: 0}}>
                 {post.frontmatter.featuredimage ? (
                   <div className={captionStyle4}> 
                     <li>
@@ -74,36 +74,36 @@ export default function BlogRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query BlogRollQuery {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          ) {
-            edges {
-              node {
-                id
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  templateKey
-                  featuredpost
-                  featuredimage {
-                    childImageSharp {
-                      gatsbyImageData(
-                        height: 400
-                        width: 600
-                        quality: 100
-                        layout: CONSTRAINED
-                      )
-                    }
+      query AllQuery {
+        allMarkdownRemark(
+          sort: {order: DESC, fields: [frontmatter___date]}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
+        ) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                templateKey
+                featuredpost
+                featuredimage {
+                  childImageSharp {
+                    gatsbyImageData(
+                      height: 400
+                      width: 600
+                      quality: 100
+                      layout: CONSTRAINED
+                    )
                   }
                 }
               }
             }
           }
         }
+      }
       `}
       render={(data, count) => <BlogRollTemplate data={data} count={count} />}
     />
