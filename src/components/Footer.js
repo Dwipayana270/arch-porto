@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
           <img
             src={biglogo}
             alt="awaarchitect"
-            style={{ width: "9em", padding: "10px", paddingTop: "25px", filter: "brightness(0) invert(1)" }}
+            style={{ width: "9em", padding: "10px", paddingTop: "25px", }}
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
