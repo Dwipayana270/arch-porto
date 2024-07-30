@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import smalllogo from "../img/smalllogo.png";
-import biglogoside from "../img/biglogoside.png";
+import smalllogo from "../img/smalllogo.jpeg";
+import biglogoside from "../img/biglogoside.jpeg";
 import './Navbar.css';
 
 const Navbar = class extends React.Component {
