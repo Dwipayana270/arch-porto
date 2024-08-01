@@ -7,6 +7,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    // favicon
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/favicon.png"
+      }
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
