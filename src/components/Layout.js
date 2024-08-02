@@ -6,6 +6,7 @@ import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import SimpleReactLightbox from 'simple-react-lightbox'
+import favicon from '../static/img/favicon.ico'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -17,7 +18,7 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <meta name="icon" href={favicon} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
