@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicons',
       options: {
-        logo: './src/logo.svg',
+        logo: './src/img/logo.svg',
         appName: 'My Website',
         background: '#fff',
         icons: {
