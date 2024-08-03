@@ -6,7 +6,7 @@ import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import SimpleReactLightbox from "simple-react-lightbox";
-import favicon from "../img/favicon.png";
+import favicon from "../img/logo.png";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
