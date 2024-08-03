@@ -9,6 +9,23 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-react-helmet",
     {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/img/logo.svg',
+        appName: 'My Website',
+        background: '#fff',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         sassOptions: {
