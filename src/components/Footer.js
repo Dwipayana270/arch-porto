@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import biglogo from "../img/smalllogo.jpeg";
+import biglogo from "../img/logo.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
@@ -10,12 +10,15 @@ import whatsapp from "../img/social/whatsapp.svg";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter" style={{padding: '0px'}}>
+      <footer
+        className="footer has-background-black has-text-white-ter"
+        style={{ padding: "0px" }}
+      >
         <div className="has-text-centered">
           <img
             src={biglogo}
             alt="awaarchitect"
-            style={{ width: "9em", padding: "10px", paddingTop: "25px", }}
+            style={{ width: "9em", padding: "10px", paddingTop: "25px" }}
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
@@ -69,9 +72,12 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <section style={{marginTop: "20px", marginBottom: "20px"}}>
-                  <p style={{color: "rgb(197 197 197)"}}>Reach Us:</p>
-                  <a title="instagram" href="https://www.instagram.com/awaarchitect/">
+                <section style={{ marginTop: "20px", marginBottom: "20px" }}>
+                  <p style={{ color: "rgb(197 197 197)" }}>Reach Us:</p>
+                  <a
+                    title="instagram"
+                    href="https://www.instagram.com/awaarchitect/"
+                  >
                     <img
                       src={instagram}
                       alt="Instagram"
