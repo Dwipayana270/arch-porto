@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "awaarchitect",
+    title: "awaarchitect | Architectural Consultant",
     description:
       "AWA ARCHITECT BALI Is an architectural consultant based in Bali, Tabanan. where AWA Architect focuses on master plan projects, resorts, villas, apartments, houses, and accommodation.",
     siteUrl: `https://www.awaarchitectbali.com`,
